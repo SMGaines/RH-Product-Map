@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "RHFont";
+  src: url('./RedHatText-Regular.otf') format("truetype");
+}
+
+.popup {
+  border-radius: 25px;
+  border-style: solid;
+  border-color: #FF0000;
+  display: none;
+  background-color: #FFFFFF;  
+  margin: auto; 
+  width: 25%;
+  z-index: 10;
+}
+
+.popupText {
+  display: inline;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-size: 18px;
+  font-family: "RHFont";
+}
+
+.popupHeaderText {
+  display: inline;
+  background-color: #FFFFFF;
+  color: #ff0000;
+  font-size: 20px;
+  font-family: "RHFont";
+}

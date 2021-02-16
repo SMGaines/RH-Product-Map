@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/tt.css">
+ 	  <script src="./js/toolTip.js" type="text/javascript"></script>
+	  <title>RH Portfolio</title>
+</head>
+  <body onload="init()">
+    <div id='media' style='display:none;'>
+      <img id="imgPortfolio" width='100%' height='100%' src="./images/rhportfolio.png" >
+  </div>
+  
+  <canvas id="backgroundDisplay" style="height:90%;width:90%; top:5%; left:5%; z-index:1"></canvas>
+    
+  <div id='divAnsible' class='popup'>
+    <TABLE>
+      <TR>
+        <TH><span class='popupHeaderText'>Red Hat Ansible Automation Platform</span></TH>
+      </TR>
+      <TR>
+        <TH><span class='popupText'>Red Hat Ansible Automation Platform automates IT tasks such as provisioning,installing, 
+                                    configuring and updating systems, devices, software and applications, across the Enterprise & Cloud, 
+                                    in order to improve productivity, lower costs, & reduce risk</span></TH>
+      </TR>
+      <TR>
+        <TH><button class='popupHeaderText' type='button' onclick="closeClickableForm()">OK</button></TH>
+      </TR>
+    </TABLE>
+  </div>
+
+  <div id='divSatellite' class='popup'>
+    <TABLE>
+      <TR>
+        <TH><span class='popupHeaderText'>Red Hat Satellite (Smart Management)</span></TH>
+      </TR>
+      <TR>
+        <TH><span class='popupText'>Red Hat Satellite is Red Hat's management solution for RHEL</span></TH>
+      </TR>
+      <TR>
+        <TH><button class='popupHeaderText' type='button' onclick="closeClickableForm()">OK</button></TH>
+      </TR>
+    </TABLE>
+  </div>
+
+  <div id='divInsights' class='popup'>
+    <TABLE>
+      <TR>
+        <TH><span class='popupHeaderText'>Red Hat Insights</span></TH>
+      </TR>
+      <TR>
+        <TH><span class='popupText'>Red Hat Insights is a cloud-based service that is included as part of a RHEL subscription
+                                    that allows customers to automatically maintain the health of their RHEL systems
+                                    with respect to security, reliability and performance</span></TH>
+      </TR>
+      <TR>
+        <TH><button class='popupHeaderText' type='button' onclick="closeClickableForm()">OK</button></TH>
+      </TR>
+    </TABLE>
+  </div>
+  </body>
+</html>

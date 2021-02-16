@@ -1,0 +1,17 @@
+{
+  "name": "rhproducts",
+  "version": "1.0",
+  "description": "RH Products clickable map",
+  "main": "public/server.js",
+  "scripts": {
+    "test": "rhproducts",
+    "start": "node public/server.js"
+  },
+  "author": "smg",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.2"
+  }
+}
