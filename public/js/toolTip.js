@@ -37,10 +37,11 @@ addClickables=function()
     clickables.push(new Clickable(24,61,"divRHV"));
     clickables.push(new Clickable(36,62,"divOpenStack"));
     clickables.push(new Clickable(46,69,"divOCS"));
-    clickables.push(new Clickable(46.79,"divRHEL"));    
+    clickables.push(new Clickable(46,79,"divRHELBottom"));    
     clickables.push(new Clickable(5,9,"divInsights"));
     clickables.push(new Clickable(5,38,"divAnsible"));
-    clickables.push(new Clickable(5,64,"divSatellite","Satellite"));
+    clickables.push(new Clickable(5,64,"divSatellite"));
+    clickables.push(new Clickable(89,56,"divEdge"));
 }
 
 addCanvasClickListener=function(canvas)
@@ -71,7 +72,7 @@ function showClickableForm(clickable)
     console.log("showClickableForm: "+clickable.divName);
     var d = document.getElementById(clickable.divName);
     d.style.position = "absolute";
-    d.style.left = clickable.x+'%';
+    d.style.left = (clickable.x-5)+'%';
     d.style.top = clickable.y+'%';
     document.getElementById(clickable.divName).style.display= "block";
 }
