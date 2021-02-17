@@ -26,17 +26,18 @@ init = function()
 addClickables=function()
 {
     clickables=[];
-    clickables.push(new Clickable(802,58,"divCodeReady"));
-    clickables.push(new Clickable(399,230,"divIntegration",));
-    clickables.push(new Clickable(810,230,"divRuntimes"));
-    clickables.push(new Clickable(1234,233,"divPAM"));
-    clickables.push(new Clickable(834,308,"divACM"));
-    clickables.push(new Clickable(756,381,"divOpenShift"));
-    clickables.push(new Clickable(239,525,"divRHEL"));
-    clickables.push(new Clickable(427,529,"divRHV"));
-    clickables.push(new Clickable(592,529,"divOpenStack"));
-    clickables.push(new Clickable(804,592,"divOCS"));
-    clickables.push(new Clickable(790,671,"divRHEL"));    
+    // Numbers are %width & %height
+    clickables.push(new Clickable(47,7,"divCodeReady"));
+    clickables.push(new Clickable(23,27,"divIntegration",));
+    clickables.push(new Clickable(47,26,"divRuntimes"));
+    clickables.push(new Clickable(72,27,"divPAM"));
+    clickables.push(new Clickable(47,36,"divACM"));
+    clickables.push(new Clickable(44,44,"divOpenShift"));
+    clickables.push(new Clickable(13,61,"divRHEL"));
+    clickables.push(new Clickable(24,61,"divRHV"));
+    clickables.push(new Clickable(36,62,"divOpenStack"));
+    clickables.push(new Clickable(46,69,"divOCS"));
+    clickables.push(new Clickable(46.79,"divRHEL"));    
     clickables.push(new Clickable(5,9,"divInsights"));
     clickables.push(new Clickable(5,38,"divAnsible"));
     clickables.push(new Clickable(5,64,"divSatellite","Satellite"));
@@ -68,17 +69,16 @@ findClickable=function(x,y)
 function showClickableForm(clickable) 
 {
     console.log("showClickableForm: "+clickable.divName);
-    currentClickable=clickable.divName;
-    var d = document.getElementById(currentClickable);
+    var d = document.getElementById(clickable.divName);
     d.style.position = "absolute";
     d.style.left = clickable.x+'%';
     d.style.top = clickable.y+'%';
-    document.getElementById(currentClickable).style.display= "block";
+    document.getElementById(clickable.divName).style.display= "block";
 }
 
-function closeClickableForm() 
+function closeClickableForm(divName) 
 {
-  document.getElementById(currentClickable).style.display= "none";
+  document.getElementById(divName).style.display= "none";
 }
 
 function fixDPI(canvas)

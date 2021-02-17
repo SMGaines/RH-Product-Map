@@ -1,6 +1,5 @@
 {
   "name": "rhproducts",
-  "version": "1.0",
   "description": "RH Products clickable map",
   "main": "public/server.js",
   "scripts": {
