@@ -1,11 +1,9 @@
 const CLICK_TOLERANCE=5;
-const NONE="";
 
 var imgPortfolio;
 var backgroundCanvas;
 var ctxBack;
 var clickables=[];
-var currentClickable;
 
 init = function()
 {
@@ -17,7 +15,6 @@ init = function()
     addCanvasClickListener(backgroundCanvas);
     
     addClickables();
-    currentClickable=NONE;
 
     ctxBack.clearRect(0, 0, backgroundCanvas.width, backgroundCanvas.height);
     ctxBack.drawImage(imgPortfolio, 0,0);
