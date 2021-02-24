@@ -14,6 +14,15 @@
   z-index: 10;
 }
 
+.projectText {
+  display: inline;
+  background-color: #FFFFFF;
+  color: #00AA00;
+  font-size: 18px;
+  text-align: left;
+  font-family: "RHFont";
+}
+
 .popupText {
   display: inline;
   background-color: #FFFFFF;
